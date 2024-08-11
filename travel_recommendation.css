@@ -37,11 +37,11 @@ nav {
   }
   
   h1 {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
   
   div {
-    margin-bottom: 10px;
+    margin-bottom: 11px;
   }
   
   label {
@@ -57,7 +57,7 @@ nav {
   }
   
   button {
-    padding: 7px 15px;
+    padding: 8px 14px;
     background-color: #4CAF50;
     color: white;
     border: none;
