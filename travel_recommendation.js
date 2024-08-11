@@ -1,6 +1,6 @@
 async function fetchData() {
     try {
-        const response = await fetch('app.json');
+        const response = await fetch('travel_recommendation_api.json');
         return await response.json();
     } catch (error) {
         console.error("Error fetching data:", error);
