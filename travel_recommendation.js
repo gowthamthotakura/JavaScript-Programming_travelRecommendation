@@ -29,7 +29,6 @@ async function handleSearch(event) {
         data.beaches.forEach(beach => {
             results += `<div><img src="${beach.imageUrl}" alt="${beach.name}"><h3>${beach.name}</h3><p>${beach.description}</p></div>`;
         });
-    } 
     } else if (searchQuery == 'countries' || searchQuery == 'countries') {
         data.countries.forEach(countries => {
             results += `<div><img src="${countries.imageUrl}" alt="${countries.name}"><h3>${countries.name}</h3><p>${countries.description}</p></div>`;
