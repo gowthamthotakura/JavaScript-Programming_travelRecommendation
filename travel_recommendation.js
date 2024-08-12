@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('btnSearch').addEventListener('click', handleSearch);
     document.getElementById('btnClear').addEventListener('click', clearResults);
 });
+
 const options = { timeZone: 'Asia/Kolkata', hour24: true, hour: 'numeric', minute: 'numeric', second: 'numeric' };
 const KolkataTime = new Date().toLocaleTimeString('en-US', options);
 console.log("Current time in Kolkata:", KolkataTime);
