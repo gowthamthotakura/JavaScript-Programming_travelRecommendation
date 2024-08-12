@@ -11,7 +11,7 @@ html{
 .home{
     min-width: 70rem;
     height: 100vh;
-    background-image: url('Images/trees.jpg');
+    background-image: url('trees.jpg');
     background-size: cover;
 }
 nav{
@@ -157,7 +157,7 @@ color: white;
     min-width: 70rem;
     height: 100vh;
     position: relative;
-    background-image: url('Images/trees.jpg');
+    background-image: url('trees.jpg');
     background-size: cover; 
     
 
@@ -241,7 +241,7 @@ color: rgb(217, 211, 211);
     min-width: 70rem;
     height: 100vh;
     position: relative;
-    background-image: url('Images/trees.jpg');
+    background-image: url('trees.jpg');
     background-size: cover; 
 }
 .contact-container{
