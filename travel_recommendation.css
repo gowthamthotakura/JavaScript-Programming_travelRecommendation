@@ -9,7 +9,7 @@ html{
 }
 
 .home{
-    min-width: 70rem;
+    min-width: 100rem;
     height: 100vh;
     background-image: url('trees.jpg');
     background-size: cover;
