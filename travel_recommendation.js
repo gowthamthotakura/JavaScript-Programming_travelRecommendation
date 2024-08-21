@@ -2,6 +2,11 @@ async function fetchData() {
     try {
         const response = await fetch('travel_recommendation_api.json');
         return await response.json();
+        
+        const options = { timeZone: 'Asia/Kolkata', hour24: true, hour: 'numeric', minute: 'numeric', second: 'numeric' };
+        const KolkataTime = new Date().toLocaleTimeString('en-US', options);
+        console.log("Current time in Kolkata:", KolkataTime);
+        
     } catch (error) {
         console.error("Error fetching data:", error);
         return null;
@@ -37,8 +42,8 @@ async function handleSearch(event) {
     else {
         
         data.countries.forEach(country => {
-            if (country.name.toLowerCase().includes(searchQuery)) {
-                country.cities.forEach(city => {
+            if (countries.name.toLowerCase().includes(searchQuery)) {
+                countries.cities.forEach(city => {
                     results += `<img src="${city.imageUrl}" alt="${city.name}"><div><h3>${city.name}</h3><p>${city.description}</p></div>`;
                 });
             }
@@ -58,6 +63,4 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('btnClear').addEventListener('click', clearResults);
 });
 
-const options = { timeZone: 'Asia/Kolkata', hour24: true, hour: 'numeric', minute: 'numeric', second: 'numeric' };
-const KolkataTime = new Date().toLocaleTimeString('en-US', options);
-console.log("Current time in Kolkata:", KolkataTime);
+
